@@ -1,0 +1,22 @@
+[
+    {
+        "name": "John Doe",
+        "rsvp": "attending"
+    },
+    {
+        "name": "Jane Smith",
+        "rsvp": "not attending"
+    },
+    {
+        "name": "Emily Johnson",
+        "rsvp": "attending"
+    },
+    {
+        "name": "Michael Brown",
+        "rsvp": "attending"
+    },
+    {
+        "name": "Sarah Davis",
+        "rsvp": "pending"
+    }
+]

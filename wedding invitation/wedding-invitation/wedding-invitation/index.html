@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="src/js/lightbox.js" defer></script>
+    <script src="src/js/main.js" defer></script>
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Gallery Component -->
+    <div id="gallery"></div>
+
+    <!-- RSVP Component -->
+    <div id="rsvp"></div>
+
+    <script>
+        // Load components dynamically
+        fetch('src/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch('src/components/gallery.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('gallery').innerHTML = data;
+            });
+
+        fetch('src/components/rsvp.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('rsvp').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
